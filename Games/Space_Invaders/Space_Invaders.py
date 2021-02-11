@@ -4,7 +4,7 @@ import time
 import random
 import sys
 
-def main_run():
+def space_invaders_main_run():
     pygame.font.init()
 
     WIDTH, HEIGHT = 750, 750

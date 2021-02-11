@@ -14,12 +14,10 @@ Title.place(anchor = N, relx = 0.5)
 # Load all the thumbnails.
 space_invaders_thumb = PhotoImage(file = "Games/Space_Invaders/Space Invaders Thumbnail.png")
 
-main_run()
-
 # Game Thumbnail Spaces
 
 ## Top Left
-tl_game_button = Button(root, image = space_invaders_thumb)
+tl_game_button = Button(root, image = space_invaders_thumb, command = space_invaders_main_run)
 tl_game_button.place(anchor = N, x = 361, y = 254)
 
 ## Top Middle
