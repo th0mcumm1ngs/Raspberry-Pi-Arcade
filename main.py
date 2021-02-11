@@ -1,5 +1,5 @@
 from tkinter import *
-from Games.Space_Invaders.Space_Invaders import *
+from Games.Space_Invaders.Space_Invaders import space_invaders_main_run
 
 root = Tk()
 
