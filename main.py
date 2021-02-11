@@ -1,4 +1,5 @@
 from tkinter import *
+from Games.Space_Invaders.Space_Invaders import *
 
 root = Tk()
 
@@ -9,10 +10,16 @@ root.attributes('-fullscreen', True)
 Title = Label(root, text = "Game Selection", fg = "#C7C7C7", bg = "#373737", font = ("SF Pro Display Ultralight", 120))
 Title.place(anchor = N, relx = 0.5)
 
+
+# Load all the thumbnails.
+space_invaders_thumb = PhotoImage(file = "Games/Space_Invaders/Space Invaders Thumbnail.png")
+
+main_run()
+
 # Game Thumbnail Spaces
 
 ## Top Left
-tl_game_button = Button(root)
+tl_game_button = Button(root, image = space_invaders_thumb)
 tl_game_button.place(anchor = N, x = 361, y = 254)
 
 ## Top Middle
